@@ -2,8 +2,8 @@
 function ConsultaSalones(){
 
 	$.ajax({    
-		//url : 'http://193.123.96.101:8080/api/Partyroom/all',
-		url : 'http://localhost:8080/api/Partyroom/all',
+		url : 'http://152.70.127.102:8080/api/Partyroom/all',
+		//url : 'http://localhost:8080/api/Partyroom/all',
 		type : 'GET',
 		dataType : 'json',
 		contentType: "application/json; charset=utf-8",
@@ -44,8 +44,8 @@ function GuardaDatos(){
 	else{
 		let datosJson=JSON.stringify(datos);
 		$.ajax({
-			//url:'http://193.123.96.101:8080/api/Partyroom/save',
-			url:'http://localhost:8080/api/Partyroom/save',
+			url:'http://152.70.127.102:8080/api/Partyroom/save',
+			//url:'http://localhost:8080/api/Partyroom/save',
 			data:datosJson,
 			type:'POST',
 			dataType: 'json',
@@ -65,8 +65,8 @@ function GuardaDatos(){
 function EditaDato(id){
 
 	$.ajax({    
-		//url : 'http://193.123.96.101:8080/api/Partyroom/'+id,
-		url : 'http://localhost:8080/api/Partyroom/'+id,
+		url : 'http://152.70.127.102:8080/api/Partyroom/'+id,
+		//url : 'http://localhost:8080/api/Partyroom/'+id,
 		type : 'GET',
 		dataType : 'json',
 		contentType: "application/json; charset=utf-8",
@@ -100,8 +100,8 @@ function ActualizaDato(){
 	let datosJson = JSON.stringify(datos);
 
 	$.ajax(    
-    	//'http://193.123.96.101:8080/api/Partyroom/update',
-		'http://localhost:8080/api/Partyroom/update',
+    	'http://152.70.127.102:8080/api/Partyroom/update',
+		//'http://localhost:8080/api/Partyroom/update',
 		{
 			data: datosJson,
     		type : 'PUT',
@@ -123,8 +123,8 @@ function ActualizaDato(){
 function EliminaDato(id){
 
 	$.ajax({    
-    	//url : 'http://193.123.96.101:8080/api/Partyroom/'+id,
-		url : 'http://localhost:8080/api/Partyroom/'+id,
+    	url : 'http://152.70.127.102:8080/api/Partyroom/'+id,
+		//url : 'http://localhost:8080/api/Partyroom/'+id,
     	type : 'DELETE',
     	dataType : 'json',
     	contentType: "application/json; charset=utf-8",
@@ -153,8 +153,8 @@ function limpiarCampos(){
 function ConsultaClientes(){
 
 	$.ajax({    
-		//url : 'http://193.123.96.101:8080/api/Client/all',
-		url : 'http://localhost:8080/api/Client/all',
+		url : 'http://152.70.127.102:8080/api/Client/all',
+		//url : 'http://localhost:8080/api/Client/all',
 		type : 'GET',
 		dataType : 'json',
 		contentType: "application/json; charset=utf-8",
@@ -196,8 +196,8 @@ function GuardaCliente(){
 		let datosJson=JSON.stringify(datos);
 
 		$.ajax({
-			//url:'http://193.123.96.101:8080/api/Client/save',
-			url:'http://localhost:8080/api/Client/save',
+			url:'http://152.70.127.102:8080/api/Client/save',
+			//url:'http://localhost:8080/api/Client/save',
 			data:datosJson,
 			type:'POST',
 			dataType: 'json',
@@ -218,8 +218,8 @@ function GuardaCliente(){
 function EditarCliente(elem, idClient){
 
 	$.ajax({    
-		//url : 'http://193.123.96.101:8080/api/Client/'+idClient,
-		url : 'http://localhost:8080/api/Client/'+idClient,
+		url : 'http://152.70.127.102:8080/api/Client/'+idClient,
+		//url : 'http://localhost:8080/api/Client/'+idClient,
 		type : 'GET',
 		dataType : 'json',
 		contentType: "application/json; charset=utf-8",
@@ -254,8 +254,8 @@ function ActualizaCliente(){
 	}else{
 		let datosJson = JSON.stringify(datos);
 		$.ajax(
-			//'http://193.123.96.101:8080/api/Client/update',
-			'http://localhost:8080/api/Client/update',
+			'http://152.70.127.102:8080/api/Client/update',
+			//'http://localhost:8080/api/Client/update',
 			{data: datosJson,
 			type : 'PUT',
 			dataType : 'json',
@@ -275,8 +275,8 @@ function ActualizaCliente(){
 // Elimina cliente
 function EliminarCliente(element, idClient){
 	$.ajax({    
-		//url : 'http://193.123.96.101:8080/api/Client/'+idClient,
-		url : 'http://localhost:8080/api/Client/'+idClient,
+		url : 'http://152.70.127.102:8080/api/Client/'+idClient,
+		//url : 'http://localhost:8080/api/Client/'+idClient,
 		type : 'DELETE',
 		dataType : 'json',
 		contentType: "application/json; charset=utf-8",
@@ -302,8 +302,8 @@ function LimpuiarCamposCliente(){
 function ConsultaMensajes(){
 
 	$.ajax({    
-		//url : 'http://193.123.96.101:8080/api/Message/all',
-		url : 'http://localhost:8080/api/Message/all',
+		url : 'http://152.70.127.102:8080/api/Message/all',
+		//url : 'http://localhost:8080/api/Message/all',
 		type : 'GET',
 		dataType : 'json',
 		contentType: "application/json; charset=utf-8",
@@ -337,8 +337,8 @@ function GuardaMensajes(){
 	}else{
 		let datosJson=JSON.stringify(datos);
 		$.ajax({
-			//url:'http://193.123.96.101:8080/api/Message/save',
-			url:'http://localhost:8080/api/Message/save',
+			url:'http://152.70.127.102:8080/api/Message/save',
+			//url:'http://localhost:8080/api/Message/save',
 			data:datosJson,
 			type:'POST',
 			dataType: 'json',
@@ -359,8 +359,8 @@ function GuardaMensajes(){
 function EditarMensaje(idMessage){
 
 	$.ajax({    
-		//url : 'http://193.123.96.101:8080/api/Message/'+idMessage,
-		url : 'http://localhost:8080/api/Message/'+idMessage,
+		url : 'http://152.70.127.102:8080/api/Message/'+idMessage,
+		//url : 'http://localhost:8080/api/Message/'+idMessage,
 		type : 'GET',
 		dataType : 'json',
 		contentType: "application/json; charset=utf-8",
@@ -390,8 +390,8 @@ function ActulizarMensaje(){
 	}else{
 		let datosJson = JSON.stringify(datos);
 		$.ajax(
-		//'http://193.123.96.101:8080/api/Message/update',
-		'http://localhost:8080/api/Message/update',
+		'http://152.70.127.102:8080/api/Message/update',
+		//'http://localhost:8080/api/Message/update',
 		{data: datosJson,
 		type : 'PUT',
 		dataType : 'json',
@@ -414,8 +414,8 @@ function ActulizarMensaje(){
 function EliminarMensaje(idMessage){
 
 	$.ajax({    
-		//url : 'http://193.123.96.101:8080/api/Message/'+idMessage,
-		url : 'http://localhost:8080/api/Message/'+idMessage,
+		url : 'http://152.70.127.102:8080/api/Message/'+idMessage,
+		//url : 'http://localhost:8080/api/Message/'+idMessage,
 		type : 'DELETE',
 		dataType : 'json',
 		contentType: "application/json; charset=utf-8",
@@ -444,8 +444,8 @@ function DesbloqueaCampo(){
 //METODOS GET POST PUT Y DELETE DE CATEGORY
 function CargarCat(){
 	$.ajax({    
-		//url : 'http://193.123.96.101:8080/api/Category/all',
-		url : 'http://localhost:8080/api/Category/all',
+		url : 'http://152.70.127.102:8080/api/Category/all',
+		//url : 'http://localhost:8080/api/Category/all',
 		type : 'GET',
 		dataType : 'json',
 		contentType: "application/json; charset=utf-8",
@@ -479,8 +479,8 @@ function ingresarDatosCat(){
 	else{
 		let datosJson=JSON.stringify(datos);
 		$.ajax({
-		//url:'http://193.123.96.101:8080/api/Category/save',
-		url:'http://localhost:8080/api/Category/save',
+		url:'http://152.70.127.102:8080/api/Category/save',
+		//url:'http://localhost:8080/api/Category/save',
 		data:datosJson,
 		type:'POST',
 		dataType: 'json',
@@ -498,8 +498,8 @@ function ingresarDatosCat(){
 
 function editarRegistroCat (id){
 	$.ajax({    
-		//url : 'http://193.123.96.101:8080/api/Category/'+id,
-		url : 'http://localhost:8080/api/Category/'+id,
+		url : 'http://152.70.127.102:8080/api/Category/'+id,
+		//url : 'http://localhost:8080/api/Category/'+id,
 		type : 'GET',
 		dataType : 'json',
 		contentType: "application/json; charset=utf-8",
@@ -527,8 +527,8 @@ function actualizarCat(){
 	else{
 		let datosJson = JSON.stringify(datos);
 		$.ajax(
-			//'http://193.123.96.101:8080/api/Category/update',
-			'http://localhost:8080/api/Category/update',
+			'http://152.70.127.102:8080/api/Category/update',
+			//'http://localhost:8080/api/Category/update',
 			{data: datosJson,
 			type : 'PUT',
 			dataType : 'json',
@@ -546,8 +546,8 @@ function actualizarCat(){
 }
 function eliminarCat(id){
 	$.ajax({    
-		//url : 'http://193.123.96.101:8080/api/Category/'+id,
-		url : 'http://localhost:8080/api/Category/'+id,
+		url : 'http://152.70.127.102:8080/api/Category/'+id,
+		//url : 'http://localhost:8080/api/Category/'+id,
 		type : 'DELETE',
 		dataType : 'json',
 		contentType: "application/json; charset=utf-8",
@@ -569,8 +569,8 @@ function limpiarCamposCat(){
 //METODOS GET POST PUT Y DELETE DE RESERVATION
 function CargarRes(){
 	$.ajax({    
-		//url : 'http://193.123.96.101:8080/api/Reservation/all',
-		url : 'http://localhost:8080/api/Reservation/all',
+		url : 'http://152.70.127.102:8080/api/Reservation/all',
+		//url : 'http://localhost:8080/api/Reservation/all',
 		type : 'GET',
 		dataType : 'json',
 		contentType: "application/json; charset=utf-8",
@@ -603,8 +603,8 @@ function ingresarDatosRes(){
 	else{
 		let datosJson=JSON.stringify(datos);
 		$.ajax({
-			//url:'http://193.123.96.101:8080/api/Reservation/save',
-			url:'http://localhost:8080/api/Reservation/save',
+			url:'http://152.70.127.102:8080/api/Reservation/save',
+			//url:'http://localhost:8080/api/Reservation/save',
 			data:datosJson,
 			type:'POST',
 			dataType: 'json',
@@ -625,8 +625,8 @@ function ingresarDatosRes(){
 
 function eliminarRes(idReservation){
 	$.ajax({    
-		//url : 'http://193.123.96.101:8080/api/Reservation/'+idReservation,
-		url : 'http://localhost:8080/api/Reservation/'+idReservation,
+		url : 'http://152.70.127.102:8080/api/Reservation/'+idReservation,
+		//url : 'http://localhost:8080/api/Reservation/'+idReservation,
 		type : 'DELETE',
 		dataType : 'json',
 		contentType: "application/json; charset=utf-8",
@@ -647,8 +647,8 @@ function limpiarCamposRes(){
 //METODOS GET POST PUT Y DELETE DE ADMIN
 function CargarAdm(){
 	$.ajax({    
-		//url : 'http://193.123.96.101:8080/api/Admin/all',
-		url : 'http://localhost:8080/api/Admin/all',
+		url : 'http://152.70.127.102:8080/api/Admin/all',
+		//url : 'http://localhost:8080/api/Admin/all',
 		type : 'GET',
 		dataType : 'json',
 		contentType: "application/json; charset=utf-8",
@@ -683,8 +683,8 @@ function ingresarDatosAdm(){
 	else{
 		let datosJson=JSON.stringify(datos);
 		$.ajax({
-			//url:'http://193.123.96.101:8080/api/Admin/save',
-			url:'http://localhost:8080/api/Admin/save',
+			url:'http://152.70.127.102:8080/api/Admin/save',
+			//url:'http://localhost:8080/api/Admin/save',
 			data:datosJson,
 			type:'POST',
 			dataType: 'json',
@@ -705,8 +705,8 @@ function ingresarDatosAdm(){
 
 function editarRegistroAdm (idAdmin){
 	$.ajax({    
-		//url : 'http://193.123.96.101:8080/api/Admin/'+idAdmin,
-		url : 'http://localhost:8080/api/Admin/'+idAdmin,
+		url : 'http://152.70.127.102:8080/api/Admin/'+idAdmin,
+		//url : 'http://localhost:8080/api/Admin/'+idAdmin,
 		type : 'GET',
 		dataType : 'json',
 		contentType: "application/json; charset=utf-8",
@@ -736,8 +736,8 @@ function actualizarAdm(){
 	else{
 		let datosJson = JSON.stringify(datos);
 		$.ajax(
-			//'http://193.123.96.101:8080/api/Admin/update',
-			'http://localhost:8080/api/Admin/update',
+			'http://152.70.127.102:8080/api/Admin/update',
+			//'http://localhost:8080/api/Admin/update',
 			{data: datosJson,
 			type : 'PUT',
 			dataType : 'json',
@@ -756,8 +756,8 @@ function actualizarAdm(){
 
 function eliminarAdm(idAdmin){
 	$.ajax({    
-		//url : 'http://193.123.96.101:8080/api/Admin/'+idAdmin,
-		url : 'http://localhost/api/Admin/'+idAdmin,
+		url : 'http://152.70.127.102:8080/api/Admin/'+idAdmin,
+		//url : 'http://localhost/api/Admin/'+idAdmin,
 		type : 'DELETE',
 		dataType : 'json',
 		contentType: "application/json; charset=utf-8",
@@ -780,8 +780,8 @@ function limpiarCamposAdm(){
 //METODOS GET POST PUT Y DELETE DE SCORE
 function CargarScore(){
 	$.ajax({    
-		//url : 'http://193.123.96.101:8080/api/Score/all',
-		url : 'http://localhost:8080/api/Score/all',
+		url : 'http://152.70.127.102:8080/api/Score/all',
+		//url : 'http://localhost:8080/api/Score/all',
 		type : 'GET',
 		dataType : 'json',
 		contentType: "application/json; charset=utf-8",
@@ -813,8 +813,8 @@ function ingresarDatosScore(){
 	else{
 		let datosJson=JSON.stringify(datos);
 		$.ajax({
-			//url:'http://193.123.96.101:8080/api/Score/save',
-			url:'http://localhost:8080/api/Score/save',
+			url:'http://152.70.127.102:8080/api/Score/save',
+			//url:'http://localhost:8080/api/Score/save',
 			data:datosJson,
 			type:'POST',
 			dataType: 'json',
@@ -835,8 +835,8 @@ function ingresarDatosScore(){
 
 function editarRegistroScore (idScore){
 	$.ajax({    
-		//url : 'http://193.123.96.101:8080/api/Score/'+idScore,
-		url : 'http://localhost:8080/api/Score/'+idScore,
+		url : 'http://152.70.127.102:8080/api/Score/'+idScore,
+		//url : 'http://localhost:8080/api/Score/'+idScore,
 		type : 'GET',
 		dataType : 'json',
 		contentType: "application/json; charset=utf-8",
@@ -864,8 +864,8 @@ function actualizarScore(){
 	else{
 		let datosJson = JSON.stringify(datos);
 		$.ajax(
-			//'http://193.123.96.101:8080/api/Score/update',
-			'http://localhost:8080/api/Score/update',
+			'http://152.70.127.102:8080/api/Score/update',
+			//'http://localhost:8080/api/Score/update',
 			{data: datosJson,
 			type : 'PUT',
 			dataType : 'json',
@@ -884,8 +884,8 @@ function actualizarScore(){
 
 function eliminarScore(idScore){
 	$.ajax({    
-		//url : 'http://193.123.96.101:8080/api/Score/'+idScore,
-		url : 'http://localhost:8080/api/Score/'+idScore,
+		url : 'http://152.70.127.102:8080/api/Score/'+idScore,
+		//url : 'http://localhost:8080/api/Score/'+idScore,
 		type : 'DELETE',
 		dataType : 'json',
 		contentType: "application/json; charset=utf-8",
