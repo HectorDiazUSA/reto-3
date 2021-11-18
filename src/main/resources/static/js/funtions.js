@@ -366,7 +366,7 @@ function EditarMensaje(idMessage){
 		contentType: "application/json; charset=utf-8",
 		success : function(respuesta) {
 			$("#idMessage").val(respuesta.idMessage);
-			$("#messageText").val(respuesta.messageText);;
+			$("#messageText").val(respuesta.messageText);
 			$("#idMessage").attr('disabled', true);
 			$("#messageText").attr('disabled', true);
 		},
